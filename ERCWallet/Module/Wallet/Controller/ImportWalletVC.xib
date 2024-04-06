@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImportWalletVC" customModule="ERCWallet" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBottom" destination="Gf8-ZW-gnu" id="NnH-U5-ZTp"/>
+                <outlet property="inputContainerView" destination="qSr-Ck-962" id="Ksk-pr-25K"/>
+                <outlet property="invalidTipsLbl" destination="Z8A-uc-bOb" id="hd4-FC-QtQ"/>
+                <outlet property="pasteBtn" destination="Yhe-gf-ksc" id="LG4-SX-HZk"/>
+                <outlet property="restoreBtn" destination="r3z-ly-LIZ" id="ThT-XS-g7c"/>
+                <outlet property="textView" destination="dbU-X7-Ccj" id="lIU-VC-q9w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qSr-Ck-962">
+                    <rect key="frame" x="16" y="139.66666666666666" width="361" height="199.99999999999997"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhe-gf-ksc">
+                            <rect key="frame" x="75.666666666666671" y="154.00000000000003" width="209.66666666666663" height="38"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" image="ic_copy" title="Paste from clipboard" imagePadding="4"/>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dbU-X7-Ccj">
+                            <rect key="frame" x="8" y="8" width="345" height="138"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="textColor" systemColor="labelColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="alphabet" returnKeyType="done" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="3nb-PG-oid"/>
+                        <constraint firstAttribute="trailing" secondItem="dbU-X7-Ccj" secondAttribute="trailing" constant="8" id="77s-iD-UTY"/>
+                        <constraint firstAttribute="bottom" secondItem="Yhe-gf-ksc" secondAttribute="bottom" constant="8" id="8Sy-bO-ecu"/>
+                        <constraint firstItem="dbU-X7-Ccj" firstAttribute="leading" secondItem="qSr-Ck-962" secondAttribute="leading" constant="8" id="N7d-pr-G1n"/>
+                        <constraint firstItem="dbU-X7-Ccj" firstAttribute="top" secondItem="qSr-Ck-962" secondAttribute="top" constant="8" id="NRR-AH-qyP"/>
+                        <constraint firstItem="Yhe-gf-ksc" firstAttribute="top" secondItem="dbU-X7-Ccj" secondAttribute="bottom" constant="8" id="bwr-fS-6nu"/>
+                        <constraint firstItem="Yhe-gf-ksc" firstAttribute="centerX" secondItem="qSr-Ck-962" secondAttribute="centerX" id="pGM-Wp-2hS"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type or paste your 12/18/24-word recovery phrase to restore your existing wallet" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U4C-4r-9Ra">
+                    <rect key="frame" x="16" y="79" width="361" height="40.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3z-ly-LIZ">
+                    <rect key="frame" x="16" y="742" width="361" height="56"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="q3i-iA-LMz"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Restore">
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                            <real key="value" value="8"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invalid word, please check the spelling" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z8A-uc-bOb">
+                    <rect key="frame" x="16" y="359.66666666666669" width="361" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="qSr-Ck-962" firstAttribute="top" secondItem="U4C-4r-9Ra" secondAttribute="bottom" constant="20" id="1ox-iQ-cY2"/>
+                <constraint firstItem="r3z-ly-LIZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="3OB-Sy-Erf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qSr-Ck-962" secondAttribute="trailing" constant="16" id="5z7-AY-4bJ"/>
+                <constraint firstItem="U4C-4r-9Ra" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="AzB-OW-nxr"/>
+                <constraint firstItem="Z8A-uc-bOb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="C16-wI-zZb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="r3z-ly-LIZ" secondAttribute="bottom" constant="20" id="Gf8-ZW-gnu"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r3z-ly-LIZ" secondAttribute="trailing" constant="16" id="Hln-UR-ZNV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Z8A-uc-bOb" secondAttribute="trailing" constant="16" id="IkC-gh-7md"/>
+                <constraint firstItem="U4C-4r-9Ra" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Nxe-KY-JVv"/>
+                <constraint firstItem="Z8A-uc-bOb" firstAttribute="top" secondItem="qSr-Ck-962" secondAttribute="bottom" constant="20" id="Oex-jU-ThV"/>
+                <constraint firstItem="qSr-Ck-962" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="ulB-f0-IXY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="U4C-4r-9Ra" secondAttribute="trailing" constant="16" id="wbv-bm-icB"/>
+            </constraints>
+            <point key="canvasLocation" x="66" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_copy" width="24" height="24"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,1275 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3BEA127EC56068BA13D8CA4B /* Pods_ERCWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37A11572EE5601F8CF7C827 /* Pods_ERCWallet.framework */; };
+		3C0EEED1CEB8EB91A9BC1FDD /* Pods_ERCWallet_ERCWalletUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1721F7AB48EC0F684206922B /* Pods_ERCWallet_ERCWalletUITests.framework */; };
+		9814EE392BBF443200C429C3 /* SendTokenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE372BBF443200C429C3 /* SendTokenVC.swift */; };
+		9814EE3A2BBF443200C429C3 /* SendTokenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814EE382BBF443200C429C3 /* SendTokenVC.xib */; };
+		9814EE3D2BBF446B00C429C3 /* ReceiveVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE3B2BBF446B00C429C3 /* ReceiveVC.swift */; };
+		9814EE3E2BBF446B00C429C3 /* ReceiveVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814EE3C2BBF446B00C429C3 /* ReceiveVC.xib */; };
+		9814EE412BBF4FE000C429C3 /* WalletAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE402BBF4FE000C429C3 /* WalletAPI.swift */; };
+		9814EE442BBF508300C429C3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE432BBF508200C429C3 /* Response.swift */; };
+		9814EE462BBF508C00C429C3 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE452BBF508C00C429C3 /* Networking.swift */; };
+		9814EE482BBF509100C429C3 /* NetowrkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE472BBF509100C429C3 /* NetowrkUtils.swift */; };
+		9814EE4A2BBFA9DC00C429C3 /* EnvManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE492BBFA9DC00C429C3 /* EnvManager.swift */; };
+		9814EE4C2BBFB4DA00C429C3 /* WalletNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE4B2BBFB4DA00C429C3 /* WalletNetworking.swift */; };
+		9814EE4E2BBFF17B00C429C3 /* SendTokenVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE4D2BBFF17B00C429C3 /* SendTokenVM.swift */; };
+		9814EE502BC0703400C429C3 /* ChainNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE4F2BC0703400C429C3 /* ChainNetwork.swift */; };
+		9814EE522BC0712700C429C3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE512BC0712700C429C3 /* NetworkManager.swift */; };
+		9814EE542BC07E4000C429C3 /* WalletAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE532BC07E4000C429C3 /* WalletAccountView.swift */; };
+		9814EE562BC07E4600C429C3 /* WalletAccountView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814EE552BC07E4600C429C3 /* WalletAccountView.xib */; };
+		9814EE592BC0898400C429C3 /* SelectNetworkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE572BC0898400C429C3 /* SelectNetworkVC.swift */; };
+		9814EE5A2BC0898400C429C3 /* SelectNetworkVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814EE582BC0898400C429C3 /* SelectNetworkVC.xib */; };
+		9814EE5D2BC08D5E00C429C3 /* SelectNetworkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE5B2BC08D5E00C429C3 /* SelectNetworkCell.swift */; };
+		9814EE5E2BC08D5E00C429C3 /* SelectNetworkCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9814EE5C2BC08D5E00C429C3 /* SelectNetworkCell.xib */; };
+		9814EE602BC08DCE00C429C3 /* SelectNetworkVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE5F2BC08DCE00C429C3 /* SelectNetworkVM.swift */; };
+		9814EE622BC08DEE00C429C3 /* SelectNeworkCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE612BC08DEE00C429C3 /* SelectNeworkCellVM.swift */; };
+		9814EE642BC09B3E00C429C3 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE632BC09B3E00C429C3 /* StringExtensions.swift */; };
+		9814EE662BC09BB700C429C3 /* BigIntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE652BC09BB700C429C3 /* BigIntExtensions.swift */; };
+		9814EE6A2BC126AD00C429C3 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE692BC126AD00C429C3 /* Notifications.swift */; };
+		9814EE6C2BC15AC500C429C3 /* RpcResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE6B2BC15AC500C429C3 /* RpcResponse.swift */; };
+		9814EE6E2BC1ADA200C429C3 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9814EE6D2BC1ADA200C429C3 /* KeyboardManager.swift */; };
+		983AE4E52BBF2F5600F55390 /* WalletCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983AE4E42BBF2F5600F55390 /* WalletCellVM.swift */; };
+		983AE4E72BBF2FE700F55390 /* SwitchAccountVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983AE4E62BBF2FE700F55390 /* SwitchAccountVM.swift */; };
+		983AE4E92BBF30AF00F55390 /* BaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983AE4E82BBF30AF00F55390 /* BaseProtocol.swift */; };
+		983AE4EB2BBF35AA00F55390 /* AddWalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983AE4EA2BBF35AA00F55390 /* AddWalletView.swift */; };
+		983AE4ED2BBF35BA00F55390 /* AddWalletView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983AE4EC2BBF35BA00F55390 /* AddWalletView.xib */; };
+		988C6DA82BBC7D0600D112D4 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DA72BBC7D0600D112D4 /* TabBarController.swift */; };
+		988C6DB42BBC7D6700D112D4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DAC2BBC7D6700D112D4 /* BaseViewController.swift */; };
+		988C6DB52BBC7D6700D112D4 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DAD2BBC7D6700D112D4 /* BaseTableViewCell.swift */; };
+		988C6DB62BBC7D6700D112D4 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DAE2BBC7D6700D112D4 /* BaseNavigationViewController.swift */; };
+		988C6DB72BBC7D6700D112D4 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DAF2BBC7D6700D112D4 /* BaseViewModel.swift */; };
+		988C6DB82BBC7D6700D112D4 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DB02BBC7D6700D112D4 /* BaseCollectionViewCell.swift */; };
+		988C6DB92BBC7D6700D112D4 /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DB12BBC7D6700D112D4 /* BaseModel.swift */; };
+		988C6DBA2BBC7D6700D112D4 /* BaseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DB22BBC7D6700D112D4 /* BaseCellViewModel.swift */; };
+		988C6DBB2BBC7D6700D112D4 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DB32BBC7D6700D112D4 /* BaseView.swift */; };
+		988C6DC02BBC800200D112D4 /* WalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DBE2BBC800200D112D4 /* WalletVC.swift */; };
+		988C6DC12BBC800200D112D4 /* WalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DBF2BBC800200D112D4 /* WalletVC.xib */; };
+		988C6DC72BBC804D00D112D4 /* BrowserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DC52BBC804D00D112D4 /* BrowserVC.swift */; };
+		988C6DC82BBC804D00D112D4 /* BrowserVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DC62BBC804D00D112D4 /* BrowserVC.xib */; };
+		988C6DCB2BBC81A900D112D4 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DCA2BBC81A900D112D4 /* UIColorExtensions.swift */; };
+		988C6DCD2BBC824800D112D4 /* UIScreenExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DCC2BBC824800D112D4 /* UIScreenExtensions.swift */; };
+		988C6DCF2BBC828900D112D4 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DCE2BBC828900D112D4 /* UIViewExtensions.swift */; };
+		988C6DD12BBC85A600D112D4 /* UIButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DD02BBC85A600D112D4 /* UIButtonExtensions.swift */; };
+		988C6DD62BBC8AEA00D112D4 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DD52BBC8AEA00D112D4 /* R.generated.swift */; };
+		988C6DD92BBC93F900D112D4 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DD82BBC93F900D112D4 /* HUD.swift */; };
+		988C6DDC2BBC97AB00D112D4 /* NewWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DDA2BBC97AB00D112D4 /* NewWalletVC.swift */; };
+		988C6DDD2BBC97AB00D112D4 /* NewWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DDB2BBC97AB00D112D4 /* NewWalletVC.xib */; };
+		988C6DE12BBC9DDD00D112D4 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DE02BBC9DDD00D112D4 /* WalletManager.swift */; };
+		988C6DE32BBC9F4C00D112D4 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DE22BBC9F4C00D112D4 /* AppConfig.swift */; };
+		988C6DE62BBCA33B00D112D4 /* TermsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DE42BBCA33B00D112D4 /* TermsVC.swift */; };
+		988C6DE72BBCA33B00D112D4 /* TermsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DE52BBCA33B00D112D4 /* TermsVC.xib */; };
+		988C6DEA2BBCA72B00D112D4 /* CreateWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DE82BBCA72B00D112D4 /* CreateWalletVC.swift */; };
+		988C6DEB2BBCA72B00D112D4 /* CreateWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DE92BBCA72B00D112D4 /* CreateWalletVC.xib */; };
+		988C6DEE2BBD35FD00D112D4 /* BackUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DEC2BBD35FD00D112D4 /* BackUpVC.swift */; };
+		988C6DEF2BBD35FD00D112D4 /* BackUpVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DED2BBD35FD00D112D4 /* BackUpVC.xib */; };
+		988C6DF22BBD4A7B00D112D4 /* VerifyMnemonicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DF02BBD4A7B00D112D4 /* VerifyMnemonicVC.swift */; };
+		988C6DF32BBD4A7B00D112D4 /* VerifyMnemonicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DF12BBD4A7B00D112D4 /* VerifyMnemonicVC.xib */; };
+		988C6DF62BBDCBD600D112D4 /* KVCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DF52BBDCBD600D112D4 /* KVCache.swift */; };
+		988C6DF92BBDD4A100D112D4 /* MyWallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DF82BBDD4A100D112D4 /* MyWallet.swift */; };
+		988C6DFD2BBDD78400D112D4 /* PasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DFB2BBDD78400D112D4 /* PasswordVC.swift */; };
+		988C6DFE2BBDD78400D112D4 /* PasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6DFC2BBDD78400D112D4 /* PasswordVC.xib */; };
+		988C6E002BBDE00400D112D4 /* PasswordTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6DFF2BBDE00400D112D4 /* PasswordTF.swift */; };
+		988C6E032BBEA15B00D112D4 /* ImportWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E012BBEA15B00D112D4 /* ImportWalletVC.swift */; };
+		988C6E042BBEA15B00D112D4 /* ImportWalletVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6E022BBEA15B00D112D4 /* ImportWalletVC.xib */; };
+		988C6E072BBEAEEB00D112D4 /* ImportVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E062BBEAEEB00D112D4 /* ImportVM.swift */; };
+		988C6E092BBEC71B00D112D4 /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E082BBEC71B00D112D4 /* PasswordManager.swift */; };
+		988C6E0B2BBEFD8E00D112D4 /* WalletVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E0A2BBEFD8E00D112D4 /* WalletVM.swift */; };
+		988C6E0E2BBF2C4400D112D4 /* SwitchAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E0C2BBF2C4400D112D4 /* SwitchAccountVC.swift */; };
+		988C6E0F2BBF2C4400D112D4 /* SwitchAccountVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6E0D2BBF2C4400D112D4 /* SwitchAccountVC.xib */; };
+		988C6E132BBF2DB000D112D4 /* MyWalletCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 988C6E112BBF2DB000D112D4 /* MyWalletCell.swift */; };
+		988C6E142BBF2DB000D112D4 /* MyWalletCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 988C6E122BBF2DB000D112D4 /* MyWalletCell.xib */; };
+		989D98D92BBBF5D000FC4461 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D98D82BBBF5D000FC4461 /* AppDelegate.swift */; };
+		989D98DB2BBBF5D000FC4461 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D98DA2BBBF5D000FC4461 /* SceneDelegate.swift */; };
+		989D98E22BBBF5D200FC4461 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989D98E12BBBF5D200FC4461 /* Assets.xcassets */; };
+		989D98E52BBBF5D200FC4461 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989D98E32BBBF5D200FC4461 /* LaunchScreen.storyboard */; };
+		989D98F02BBBF5D200FC4461 /* ERCWalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D98EF2BBBF5D200FC4461 /* ERCWalletTests.swift */; };
+		989D98FA2BBBF5D200FC4461 /* ERCWalletUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D98F92BBBF5D200FC4461 /* ERCWalletUITests.swift */; };
+		989D98FC2BBBF5D200FC4461 /* ERCWalletUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989D98FB2BBBF5D200FC4461 /* ERCWalletUITestsLaunchTests.swift */; };
+		C4E340A65738079775A1D23E /* Pods_ERCWalletTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20B6948197329B7E79D7530F /* Pods_ERCWalletTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		989D98EC2BBBF5D200FC4461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 989D98CD2BBBF5D000FC4461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989D98D42BBBF5D000FC4461;
+			remoteInfo = ERCWallet;
+		};
+		989D98F62BBBF5D200FC4461 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 989D98CD2BBBF5D000FC4461 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 989D98D42BBBF5D000FC4461;
+			remoteInfo = ERCWallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		15690BD94AFB7594EA8BF041 /* Pods-ERCWalletTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWalletTests.debug.xcconfig"; path = "Target Support Files/Pods-ERCWalletTests/Pods-ERCWalletTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1721F7AB48EC0F684206922B /* Pods_ERCWallet_ERCWalletUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERCWallet_ERCWalletUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20B6948197329B7E79D7530F /* Pods_ERCWalletTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERCWalletTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		379F31627A895BCAB7FD921A /* Pods-ERCWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWallet.release.xcconfig"; path = "Target Support Files/Pods-ERCWallet/Pods-ERCWallet.release.xcconfig"; sourceTree = "<group>"; };
+		62903A21A1C5079D559E6BB2 /* Pods-ERCWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWallet.debug.xcconfig"; path = "Target Support Files/Pods-ERCWallet/Pods-ERCWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		719F04CBF11CCA60C22AA251 /* Pods-ERCWalletTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWalletTests.release.xcconfig"; path = "Target Support Files/Pods-ERCWalletTests/Pods-ERCWalletTests.release.xcconfig"; sourceTree = "<group>"; };
+		7823026A124A640850B69B7B /* Pods-ERCWallet-ERCWalletUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWallet-ERCWalletUITests.release.xcconfig"; path = "Target Support Files/Pods-ERCWallet-ERCWalletUITests/Pods-ERCWallet-ERCWalletUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9814EE372BBF443200C429C3 /* SendTokenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTokenVC.swift; sourceTree = "<group>"; };
+		9814EE382BBF443200C429C3 /* SendTokenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SendTokenVC.xib; sourceTree = "<group>"; };
+		9814EE3B2BBF446B00C429C3 /* ReceiveVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiveVC.swift; sourceTree = "<group>"; };
+		9814EE3C2BBF446B00C429C3 /* ReceiveVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReceiveVC.xib; sourceTree = "<group>"; };
+		9814EE402BBF4FE000C429C3 /* WalletAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAPI.swift; sourceTree = "<group>"; };
+		9814EE432BBF508200C429C3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		9814EE452BBF508C00C429C3 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		9814EE472BBF509100C429C3 /* NetowrkUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetowrkUtils.swift; sourceTree = "<group>"; };
+		9814EE492BBFA9DC00C429C3 /* EnvManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvManager.swift; sourceTree = "<group>"; };
+		9814EE4B2BBFB4DA00C429C3 /* WalletNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletNetworking.swift; sourceTree = "<group>"; };
+		9814EE4D2BBFF17B00C429C3 /* SendTokenVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendTokenVM.swift; sourceTree = "<group>"; };
+		9814EE4F2BC0703400C429C3 /* ChainNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainNetwork.swift; sourceTree = "<group>"; };
+		9814EE512BC0712700C429C3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9814EE532BC07E4000C429C3 /* WalletAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletAccountView.swift; sourceTree = "<group>"; };
+		9814EE552BC07E4600C429C3 /* WalletAccountView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletAccountView.xib; sourceTree = "<group>"; };
+		9814EE572BC0898400C429C3 /* SelectNetworkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNetworkVC.swift; sourceTree = "<group>"; };
+		9814EE582BC0898400C429C3 /* SelectNetworkVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectNetworkVC.xib; sourceTree = "<group>"; };
+		9814EE5B2BC08D5E00C429C3 /* SelectNetworkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNetworkCell.swift; sourceTree = "<group>"; };
+		9814EE5C2BC08D5E00C429C3 /* SelectNetworkCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectNetworkCell.xib; sourceTree = "<group>"; };
+		9814EE5F2BC08DCE00C429C3 /* SelectNetworkVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNetworkVM.swift; sourceTree = "<group>"; };
+		9814EE612BC08DEE00C429C3 /* SelectNeworkCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNeworkCellVM.swift; sourceTree = "<group>"; };
+		9814EE632BC09B3E00C429C3 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		9814EE652BC09BB700C429C3 /* BigIntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigIntExtensions.swift; sourceTree = "<group>"; };
+		9814EE692BC126AD00C429C3 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		9814EE6B2BC15AC500C429C3 /* RpcResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RpcResponse.swift; sourceTree = "<group>"; };
+		9814EE6D2BC1ADA200C429C3 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
+		983AE4E42BBF2F5600F55390 /* WalletCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletCellVM.swift; sourceTree = "<group>"; };
+		983AE4E62BBF2FE700F55390 /* SwitchAccountVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccountVM.swift; sourceTree = "<group>"; };
+		983AE4E82BBF30AF00F55390 /* BaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseProtocol.swift; sourceTree = "<group>"; };
+		983AE4EA2BBF35AA00F55390 /* AddWalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletView.swift; sourceTree = "<group>"; };
+		983AE4EC2BBF35BA00F55390 /* AddWalletView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddWalletView.xib; sourceTree = "<group>"; };
+		988C6DA72BBC7D0600D112D4 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		988C6DAC2BBC7D6700D112D4 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		988C6DAD2BBC7D6700D112D4 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		988C6DAE2BBC7D6700D112D4 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		988C6DAF2BBC7D6700D112D4 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		988C6DB02BBC7D6700D112D4 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		988C6DB12BBC7D6700D112D4 /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		988C6DB22BBC7D6700D112D4 /* BaseCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCellViewModel.swift; sourceTree = "<group>"; };
+		988C6DB32BBC7D6700D112D4 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		988C6DBD2BBC7E8B00D112D4 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		988C6DBE2BBC800200D112D4 /* WalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVC.swift; sourceTree = "<group>"; };
+		988C6DBF2BBC800200D112D4 /* WalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WalletVC.xib; sourceTree = "<group>"; };
+		988C6DC52BBC804D00D112D4 /* BrowserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserVC.swift; sourceTree = "<group>"; };
+		988C6DC62BBC804D00D112D4 /* BrowserVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowserVC.xib; sourceTree = "<group>"; };
+		988C6DCA2BBC81A900D112D4 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		988C6DCC2BBC824800D112D4 /* UIScreenExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIScreenExtensions.swift; sourceTree = "<group>"; };
+		988C6DCE2BBC828900D112D4 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		988C6DD02BBC85A600D112D4 /* UIButtonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtensions.swift; sourceTree = "<group>"; };
+		988C6DD52BBC8AEA00D112D4 /* R.generated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		988C6DD82BBC93F900D112D4 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		988C6DDA2BBC97AB00D112D4 /* NewWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWalletVC.swift; sourceTree = "<group>"; };
+		988C6DDB2BBC97AB00D112D4 /* NewWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewWalletVC.xib; sourceTree = "<group>"; };
+		988C6DE02BBC9DDD00D112D4 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		988C6DE22BBC9F4C00D112D4 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		988C6DE42BBCA33B00D112D4 /* TermsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsVC.swift; sourceTree = "<group>"; };
+		988C6DE52BBCA33B00D112D4 /* TermsVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TermsVC.xib; sourceTree = "<group>"; };
+		988C6DE82BBCA72B00D112D4 /* CreateWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWalletVC.swift; sourceTree = "<group>"; };
+		988C6DE92BBCA72B00D112D4 /* CreateWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateWalletVC.xib; sourceTree = "<group>"; };
+		988C6DEC2BBD35FD00D112D4 /* BackUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackUpVC.swift; sourceTree = "<group>"; };
+		988C6DED2BBD35FD00D112D4 /* BackUpVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackUpVC.xib; sourceTree = "<group>"; };
+		988C6DF02BBD4A7B00D112D4 /* VerifyMnemonicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyMnemonicVC.swift; sourceTree = "<group>"; };
+		988C6DF12BBD4A7B00D112D4 /* VerifyMnemonicVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyMnemonicVC.xib; sourceTree = "<group>"; };
+		988C6DF52BBDCBD600D112D4 /* KVCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KVCache.swift; sourceTree = "<group>"; };
+		988C6DF82BBDD4A100D112D4 /* MyWallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWallet.swift; sourceTree = "<group>"; };
+		988C6DFB2BBDD78400D112D4 /* PasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordVC.swift; sourceTree = "<group>"; };
+		988C6DFC2BBDD78400D112D4 /* PasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PasswordVC.xib; sourceTree = "<group>"; };
+		988C6DFF2BBDE00400D112D4 /* PasswordTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTF.swift; sourceTree = "<group>"; };
+		988C6E012BBEA15B00D112D4 /* ImportWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletVC.swift; sourceTree = "<group>"; };
+		988C6E022BBEA15B00D112D4 /* ImportWalletVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImportWalletVC.xib; sourceTree = "<group>"; };
+		988C6E062BBEAEEB00D112D4 /* ImportVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportVM.swift; sourceTree = "<group>"; };
+		988C6E082BBEC71B00D112D4 /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
+		988C6E0A2BBEFD8E00D112D4 /* WalletVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletVM.swift; sourceTree = "<group>"; };
+		988C6E0C2BBF2C4400D112D4 /* SwitchAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccountVC.swift; sourceTree = "<group>"; };
+		988C6E0D2BBF2C4400D112D4 /* SwitchAccountVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchAccountVC.xib; sourceTree = "<group>"; };
+		988C6E112BBF2DB000D112D4 /* MyWalletCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWalletCell.swift; sourceTree = "<group>"; };
+		988C6E122BBF2DB000D112D4 /* MyWalletCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyWalletCell.xib; sourceTree = "<group>"; };
+		989D98D52BBBF5D000FC4461 /* ERCWallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERCWallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989D98D82BBBF5D000FC4461 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		989D98DA2BBBF5D000FC4461 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		989D98E12BBBF5D200FC4461 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		989D98E42BBBF5D200FC4461 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		989D98E62BBBF5D200FC4461 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		989D98EB2BBBF5D200FC4461 /* ERCWalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERCWalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		989D98EF2BBBF5D200FC4461 /* ERCWalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCWalletTests.swift; sourceTree = "<group>"; };
+		989D98F52BBBF5D200FC4461 /* ERCWalletUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ERCWalletUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		989D98F92BBBF5D200FC4461 /* ERCWalletUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCWalletUITests.swift; sourceTree = "<group>"; };
+		989D98FB2BBBF5D200FC4461 /* ERCWalletUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERCWalletUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E37A11572EE5601F8CF7C827 /* Pods_ERCWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ERCWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF0F68A0A1FF739EFFF9076B /* Pods-ERCWallet-ERCWalletUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERCWallet-ERCWalletUITests.debug.xcconfig"; path = "Target Support Files/Pods-ERCWallet-ERCWalletUITests/Pods-ERCWallet-ERCWalletUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		989D98D22BBBF5D000FC4461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3BEA127EC56068BA13D8CA4B /* Pods_ERCWallet.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98E82BBBF5D200FC4461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4E340A65738079775A1D23E /* Pods_ERCWalletTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98F22BBBF5D200FC4461 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0EEED1CEB8EB91A9BC1FDD /* Pods_ERCWallet_ERCWalletUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		545D70C89C5CC2CB3A11D9F4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E37A11572EE5601F8CF7C827 /* Pods_ERCWallet.framework */,
+				1721F7AB48EC0F684206922B /* Pods_ERCWallet_ERCWalletUITests.framework */,
+				20B6948197329B7E79D7530F /* Pods_ERCWalletTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9814EE3F2BBF4FB900C429C3 /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE472BBF509100C429C3 /* NetowrkUtils.swift */,
+				9814EE452BBF508C00C429C3 /* Networking.swift */,
+				9814EE432BBF508200C429C3 /* Response.swift */,
+				9814EE6B2BC15AC500C429C3 /* RpcResponse.swift */,
+				9814EE492BBFA9DC00C429C3 /* EnvManager.swift */,
+				9814EE422BBF506200C429C3 /* API */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		9814EE422BBF506200C429C3 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE402BBF4FE000C429C3 /* WalletAPI.swift */,
+				9814EE4B2BBFB4DA00C429C3 /* WalletNetworking.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9814EE672BC123C800C429C3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE3F2BBF4FB900C429C3 /* HTTP */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		9814EE682BC1269D00C429C3 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE692BC126AD00C429C3 /* Notifications.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		988C6DA32BBC74FC00D112D4 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DA52BBC7CCE00D112D4 /* Common */,
+				988C6DC22BBC802A00D112D4 /* Browser */,
+				988C6DA42BBC762E00D112D4 /* Wallet */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		988C6DA42BBC762E00D112D4 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				988C6E102BBF2CE900D112D4 /* View */,
+				988C6E052BBEAEDC00D112D4 /* ViewModel */,
+				988C6DF72BBDD48800D112D4 /* Model */,
+				988C6DA92BBC7D1300D112D4 /* Controller */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		988C6DA52BBC7CCE00D112D4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DFA2BBDD77000D112D4 /* Password */,
+				988C6DAB2BBC7D6700D112D4 /* Base */,
+				988C6DA62BBC7CD600D112D4 /* TabBar */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		988C6DA62BBC7CD600D112D4 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DA72BBC7D0600D112D4 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		988C6DA92BBC7D1300D112D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DBE2BBC800200D112D4 /* WalletVC.swift */,
+				988C6DBF2BBC800200D112D4 /* WalletVC.xib */,
+				988C6DDA2BBC97AB00D112D4 /* NewWalletVC.swift */,
+				988C6DDB2BBC97AB00D112D4 /* NewWalletVC.xib */,
+				988C6E012BBEA15B00D112D4 /* ImportWalletVC.swift */,
+				988C6E022BBEA15B00D112D4 /* ImportWalletVC.xib */,
+				988C6DE42BBCA33B00D112D4 /* TermsVC.swift */,
+				988C6DE52BBCA33B00D112D4 /* TermsVC.xib */,
+				988C6DE82BBCA72B00D112D4 /* CreateWalletVC.swift */,
+				988C6DE92BBCA72B00D112D4 /* CreateWalletVC.xib */,
+				988C6DEC2BBD35FD00D112D4 /* BackUpVC.swift */,
+				988C6DED2BBD35FD00D112D4 /* BackUpVC.xib */,
+				988C6DF02BBD4A7B00D112D4 /* VerifyMnemonicVC.swift */,
+				988C6DF12BBD4A7B00D112D4 /* VerifyMnemonicVC.xib */,
+				988C6E0C2BBF2C4400D112D4 /* SwitchAccountVC.swift */,
+				988C6E0D2BBF2C4400D112D4 /* SwitchAccountVC.xib */,
+				9814EE372BBF443200C429C3 /* SendTokenVC.swift */,
+				9814EE382BBF443200C429C3 /* SendTokenVC.xib */,
+				9814EE3B2BBF446B00C429C3 /* ReceiveVC.swift */,
+				9814EE3C2BBF446B00C429C3 /* ReceiveVC.xib */,
+				9814EE572BC0898400C429C3 /* SelectNetworkVC.swift */,
+				9814EE582BC0898400C429C3 /* SelectNetworkVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		988C6DAB2BBC7D6700D112D4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DAC2BBC7D6700D112D4 /* BaseViewController.swift */,
+				988C6DAD2BBC7D6700D112D4 /* BaseTableViewCell.swift */,
+				988C6DAE2BBC7D6700D112D4 /* BaseNavigationViewController.swift */,
+				988C6DAF2BBC7D6700D112D4 /* BaseViewModel.swift */,
+				988C6DB02BBC7D6700D112D4 /* BaseCollectionViewCell.swift */,
+				988C6DB12BBC7D6700D112D4 /* BaseModel.swift */,
+				988C6DB22BBC7D6700D112D4 /* BaseCellViewModel.swift */,
+				988C6DB32BBC7D6700D112D4 /* BaseView.swift */,
+				983AE4E82BBF30AF00F55390 /* BaseProtocol.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		988C6DC22BBC802A00D112D4 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DC32BBC803700D112D4 /* Controller */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		988C6DC32BBC803700D112D4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DC52BBC804D00D112D4 /* BrowserVC.swift */,
+				988C6DC62BBC804D00D112D4 /* BrowserVC.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		988C6DC92BBC817800D112D4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DCA2BBC81A900D112D4 /* UIColorExtensions.swift */,
+				988C6DCC2BBC824800D112D4 /* UIScreenExtensions.swift */,
+				988C6DCE2BBC828900D112D4 /* UIViewExtensions.swift */,
+				988C6DD02BBC85A600D112D4 /* UIButtonExtensions.swift */,
+				9814EE632BC09B3E00C429C3 /* StringExtensions.swift */,
+				9814EE652BC09BB700C429C3 /* BigIntExtensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		988C6DD32BBC8A8100D112D4 /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DF42BBDCBB700D112D4 /* KVCache */,
+				988C6DD72BBC93ED00D112D4 /* HUD */,
+				988C6DD42BBC8ABB00D112D4 /* R.swift */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		988C6DD42BBC8ABB00D112D4 /* R.swift */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DD52BBC8AEA00D112D4 /* R.generated.swift */,
+			);
+			path = R.swift;
+			sourceTree = "<group>";
+		};
+		988C6DD72BBC93ED00D112D4 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DD82BBC93F900D112D4 /* HUD.swift */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		988C6DDE2BBC9DC600D112D4 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE682BC1269D00C429C3 /* Notification */,
+				988C6DDF2BBC9DC900D112D4 /* Wallet */,
+				988C6DE22BBC9F4C00D112D4 /* AppConfig.swift */,
+				9814EE6D2BC1ADA200C429C3 /* KeyboardManager.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		988C6DDF2BBC9DC900D112D4 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DE02BBC9DDD00D112D4 /* WalletManager.swift */,
+				988C6E082BBEC71B00D112D4 /* PasswordManager.swift */,
+				9814EE512BC0712700C429C3 /* NetworkManager.swift */,
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		988C6DF42BBDCBB700D112D4 /* KVCache */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DF52BBDCBD600D112D4 /* KVCache.swift */,
+			);
+			path = KVCache;
+			sourceTree = "<group>";
+		};
+		988C6DF72BBDD48800D112D4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DF82BBDD4A100D112D4 /* MyWallet.swift */,
+				9814EE4F2BC0703400C429C3 /* ChainNetwork.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		988C6DFA2BBDD77000D112D4 /* Password */ = {
+			isa = PBXGroup;
+			children = (
+				988C6DFB2BBDD78400D112D4 /* PasswordVC.swift */,
+				988C6DFC2BBDD78400D112D4 /* PasswordVC.xib */,
+				988C6DFF2BBDE00400D112D4 /* PasswordTF.swift */,
+			);
+			path = Password;
+			sourceTree = "<group>";
+		};
+		988C6E052BBEAEDC00D112D4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				988C6E0A2BBEFD8E00D112D4 /* WalletVM.swift */,
+				988C6E062BBEAEEB00D112D4 /* ImportVM.swift */,
+				983AE4E42BBF2F5600F55390 /* WalletCellVM.swift */,
+				983AE4E62BBF2FE700F55390 /* SwitchAccountVM.swift */,
+				9814EE4D2BBFF17B00C429C3 /* SendTokenVM.swift */,
+				9814EE5F2BC08DCE00C429C3 /* SelectNetworkVM.swift */,
+				9814EE612BC08DEE00C429C3 /* SelectNeworkCellVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		988C6E102BBF2CE900D112D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				988C6E112BBF2DB000D112D4 /* MyWalletCell.swift */,
+				988C6E122BBF2DB000D112D4 /* MyWalletCell.xib */,
+				983AE4EA2BBF35AA00F55390 /* AddWalletView.swift */,
+				983AE4EC2BBF35BA00F55390 /* AddWalletView.xib */,
+				9814EE532BC07E4000C429C3 /* WalletAccountView.swift */,
+				9814EE552BC07E4600C429C3 /* WalletAccountView.xib */,
+				9814EE5B2BC08D5E00C429C3 /* SelectNetworkCell.swift */,
+				9814EE5C2BC08D5E00C429C3 /* SelectNetworkCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		989D98CC2BBBF5D000FC4461 = {
+			isa = PBXGroup;
+			children = (
+				988C6DBD2BBC7E8B00D112D4 /* README.md */,
+				989D98D72BBBF5D000FC4461 /* ERCWallet */,
+				989D98EE2BBBF5D200FC4461 /* ERCWalletTests */,
+				989D98F82BBBF5D200FC4461 /* ERCWalletUITests */,
+				989D98D62BBBF5D000FC4461 /* Products */,
+				E2A1F8040AD2918BA13CB45D /* Pods */,
+				545D70C89C5CC2CB3A11D9F4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		989D98D62BBBF5D000FC4461 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				989D98D52BBBF5D000FC4461 /* ERCWallet.app */,
+				989D98EB2BBBF5D200FC4461 /* ERCWalletTests.xctest */,
+				989D98F52BBBF5D200FC4461 /* ERCWalletUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		989D98D72BBBF5D000FC4461 /* ERCWallet */ = {
+			isa = PBXGroup;
+			children = (
+				9814EE672BC123C800C429C3 /* Networking */,
+				988C6DDE2BBC9DC600D112D4 /* Global */,
+				988C6DD32BBC8A8100D112D4 /* Plugin */,
+				988C6DC92BBC817800D112D4 /* Extension */,
+				988C6DA32BBC74FC00D112D4 /* Module */,
+				989D98D82BBBF5D000FC4461 /* AppDelegate.swift */,
+				989D98DA2BBBF5D000FC4461 /* SceneDelegate.swift */,
+				989D98E12BBBF5D200FC4461 /* Assets.xcassets */,
+				989D98E32BBBF5D200FC4461 /* LaunchScreen.storyboard */,
+				989D98E62BBBF5D200FC4461 /* Info.plist */,
+			);
+			path = ERCWallet;
+			sourceTree = "<group>";
+		};
+		989D98EE2BBBF5D200FC4461 /* ERCWalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				989D98EF2BBBF5D200FC4461 /* ERCWalletTests.swift */,
+			);
+			path = ERCWalletTests;
+			sourceTree = "<group>";
+		};
+		989D98F82BBBF5D200FC4461 /* ERCWalletUITests */ = {
+			isa = PBXGroup;
+			children = (
+				989D98F92BBBF5D200FC4461 /* ERCWalletUITests.swift */,
+				989D98FB2BBBF5D200FC4461 /* ERCWalletUITestsLaunchTests.swift */,
+			);
+			path = ERCWalletUITests;
+			sourceTree = "<group>";
+		};
+		E2A1F8040AD2918BA13CB45D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62903A21A1C5079D559E6BB2 /* Pods-ERCWallet.debug.xcconfig */,
+				379F31627A895BCAB7FD921A /* Pods-ERCWallet.release.xcconfig */,
+				EF0F68A0A1FF739EFFF9076B /* Pods-ERCWallet-ERCWalletUITests.debug.xcconfig */,
+				7823026A124A640850B69B7B /* Pods-ERCWallet-ERCWalletUITests.release.xcconfig */,
+				15690BD94AFB7594EA8BF041 /* Pods-ERCWalletTests.debug.xcconfig */,
+				719F04CBF11CCA60C22AA251 /* Pods-ERCWalletTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		989D98D42BBBF5D000FC4461 /* ERCWallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989D98FF2BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWallet" */;
+			buildPhases = (
+				B09EB00597F929FD1CD0544B /* [CP] Check Pods Manifest.lock */,
+				988C6DD22BBC8A6D00D112D4 /* ShellScript */,
+				989D98D12BBBF5D000FC4461 /* Sources */,
+				989D98D22BBBF5D000FC4461 /* Frameworks */,
+				989D98D32BBBF5D000FC4461 /* Resources */,
+				AFD8B0803542431608C3A84D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ERCWallet;
+			productName = ERCWallet;
+			productReference = 989D98D52BBBF5D000FC4461 /* ERCWallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		989D98EA2BBBF5D200FC4461 /* ERCWalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989D99022BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWalletTests" */;
+			buildPhases = (
+				3095318A882780E9FE1A252E /* [CP] Check Pods Manifest.lock */,
+				989D98E72BBBF5D200FC4461 /* Sources */,
+				989D98E82BBBF5D200FC4461 /* Frameworks */,
+				989D98E92BBBF5D200FC4461 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				989D98ED2BBBF5D200FC4461 /* PBXTargetDependency */,
+			);
+			name = ERCWalletTests;
+			productName = ERCWalletTests;
+			productReference = 989D98EB2BBBF5D200FC4461 /* ERCWalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		989D98F42BBBF5D200FC4461 /* ERCWalletUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 989D99052BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWalletUITests" */;
+			buildPhases = (
+				19AAE23DE194C663F43E2BC2 /* [CP] Check Pods Manifest.lock */,
+				989D98F12BBBF5D200FC4461 /* Sources */,
+				989D98F22BBBF5D200FC4461 /* Frameworks */,
+				989D98F32BBBF5D200FC4461 /* Resources */,
+				7F12F4C7297548561DAECFA5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				989D98F72BBBF5D200FC4461 /* PBXTargetDependency */,
+			);
+			name = ERCWalletUITests;
+			productName = ERCWalletUITests;
+			productReference = 989D98F52BBBF5D200FC4461 /* ERCWalletUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		989D98CD2BBBF5D000FC4461 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					989D98D42BBBF5D000FC4461 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					989D98EA2BBBF5D200FC4461 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 989D98D42BBBF5D000FC4461;
+					};
+					989D98F42BBBF5D200FC4461 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 989D98D42BBBF5D000FC4461;
+					};
+				};
+			};
+			buildConfigurationList = 989D98D02BBBF5D000FC4461 /* Build configuration list for PBXProject "ERCWallet" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 989D98CC2BBBF5D000FC4461;
+			productRefGroup = 989D98D62BBBF5D000FC4461 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				989D98D42BBBF5D000FC4461 /* ERCWallet */,
+				989D98EA2BBBF5D200FC4461 /* ERCWalletTests */,
+				989D98F42BBBF5D200FC4461 /* ERCWalletUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		989D98D32BBBF5D000FC4461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				988C6DF32BBD4A7B00D112D4 /* VerifyMnemonicVC.xib in Resources */,
+				9814EE5E2BC08D5E00C429C3 /* SelectNetworkCell.xib in Resources */,
+				983AE4ED2BBF35BA00F55390 /* AddWalletView.xib in Resources */,
+				988C6DDD2BBC97AB00D112D4 /* NewWalletVC.xib in Resources */,
+				9814EE3A2BBF443200C429C3 /* SendTokenVC.xib in Resources */,
+				989D98E52BBBF5D200FC4461 /* LaunchScreen.storyboard in Resources */,
+				988C6DFE2BBDD78400D112D4 /* PasswordVC.xib in Resources */,
+				988C6E0F2BBF2C4400D112D4 /* SwitchAccountVC.xib in Resources */,
+				988C6E042BBEA15B00D112D4 /* ImportWalletVC.xib in Resources */,
+				988C6E142BBF2DB000D112D4 /* MyWalletCell.xib in Resources */,
+				988C6DE72BBCA33B00D112D4 /* TermsVC.xib in Resources */,
+				9814EE562BC07E4600C429C3 /* WalletAccountView.xib in Resources */,
+				9814EE3E2BBF446B00C429C3 /* ReceiveVC.xib in Resources */,
+				988C6DEB2BBCA72B00D112D4 /* CreateWalletVC.xib in Resources */,
+				988C6DEF2BBD35FD00D112D4 /* BackUpVC.xib in Resources */,
+				989D98E22BBBF5D200FC4461 /* Assets.xcassets in Resources */,
+				9814EE5A2BC0898400C429C3 /* SelectNetworkVC.xib in Resources */,
+				988C6DC12BBC800200D112D4 /* WalletVC.xib in Resources */,
+				988C6DC82BBC804D00D112D4 /* BrowserVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98E92BBBF5D200FC4461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98F32BBBF5D200FC4461 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19AAE23DE194C663F43E2BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERCWallet-ERCWalletUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3095318A882780E9FE1A252E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERCWalletTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F12F4C7297548561DAECFA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCWallet-ERCWalletUITests/Pods-ERCWallet-ERCWalletUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCWallet-ERCWalletUITests/Pods-ERCWallet-ERCWalletUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERCWallet-ERCWalletUITests/Pods-ERCWallet-ERCWalletUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		988C6DD22BBC8A6D00D112D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/ERCWallet/Plugin/R.swift/R.generated.swift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/ERCWallet/Plugin/R.swift/R.generated.swift\"\n";
+		};
+		AFD8B0803542431608C3A84D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCWallet/Pods-ERCWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ERCWallet/Pods-ERCWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ERCWallet/Pods-ERCWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B09EB00597F929FD1CD0544B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERCWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		989D98D12BBBF5D000FC4461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				983AE4E72BBF2FE700F55390 /* SwitchAccountVM.swift in Sources */,
+				988C6DE62BBCA33B00D112D4 /* TermsVC.swift in Sources */,
+				983AE4E52BBF2F5600F55390 /* WalletCellVM.swift in Sources */,
+				9814EE542BC07E4000C429C3 /* WalletAccountView.swift in Sources */,
+				988C6DE12BBC9DDD00D112D4 /* WalletManager.swift in Sources */,
+				983AE4E92BBF30AF00F55390 /* BaseProtocol.swift in Sources */,
+				9814EE662BC09BB700C429C3 /* BigIntExtensions.swift in Sources */,
+				988C6E032BBEA15B00D112D4 /* ImportWalletVC.swift in Sources */,
+				988C6DB42BBC7D6700D112D4 /* BaseViewController.swift in Sources */,
+				988C6DF62BBDCBD600D112D4 /* KVCache.swift in Sources */,
+				988C6DCB2BBC81A900D112D4 /* UIColorExtensions.swift in Sources */,
+				988C6DCD2BBC824800D112D4 /* UIScreenExtensions.swift in Sources */,
+				9814EE502BC0703400C429C3 /* ChainNetwork.swift in Sources */,
+				988C6E072BBEAEEB00D112D4 /* ImportVM.swift in Sources */,
+				988C6DEA2BBCA72B00D112D4 /* CreateWalletVC.swift in Sources */,
+				9814EE5D2BC08D5E00C429C3 /* SelectNetworkCell.swift in Sources */,
+				9814EE3D2BBF446B00C429C3 /* ReceiveVC.swift in Sources */,
+				988C6DFD2BBDD78400D112D4 /* PasswordVC.swift in Sources */,
+				988C6DD92BBC93F900D112D4 /* HUD.swift in Sources */,
+				9814EE642BC09B3E00C429C3 /* StringExtensions.swift in Sources */,
+				9814EE6E2BC1ADA200C429C3 /* KeyboardManager.swift in Sources */,
+				988C6DF22BBD4A7B00D112D4 /* VerifyMnemonicVC.swift in Sources */,
+				9814EE592BC0898400C429C3 /* SelectNetworkVC.swift in Sources */,
+				988C6E092BBEC71B00D112D4 /* PasswordManager.swift in Sources */,
+				9814EE482BBF509100C429C3 /* NetowrkUtils.swift in Sources */,
+				988C6DB82BBC7D6700D112D4 /* BaseCollectionViewCell.swift in Sources */,
+				988C6DBB2BBC7D6700D112D4 /* BaseView.swift in Sources */,
+				988C6DEE2BBD35FD00D112D4 /* BackUpVC.swift in Sources */,
+				988C6DF92BBDD4A100D112D4 /* MyWallet.swift in Sources */,
+				9814EE462BBF508C00C429C3 /* Networking.swift in Sources */,
+				988C6DBA2BBC7D6700D112D4 /* BaseCellViewModel.swift in Sources */,
+				988C6E0E2BBF2C4400D112D4 /* SwitchAccountVC.swift in Sources */,
+				988C6DA82BBC7D0600D112D4 /* TabBarController.swift in Sources */,
+				9814EE522BC0712700C429C3 /* NetworkManager.swift in Sources */,
+				988C6DB92BBC7D6700D112D4 /* BaseModel.swift in Sources */,
+				9814EE4A2BBFA9DC00C429C3 /* EnvManager.swift in Sources */,
+				988C6DC72BBC804D00D112D4 /* BrowserVC.swift in Sources */,
+				988C6DD12BBC85A600D112D4 /* UIButtonExtensions.swift in Sources */,
+				9814EE412BBF4FE000C429C3 /* WalletAPI.swift in Sources */,
+				9814EE622BC08DEE00C429C3 /* SelectNeworkCellVM.swift in Sources */,
+				989D98D92BBBF5D000FC4461 /* AppDelegate.swift in Sources */,
+				983AE4EB2BBF35AA00F55390 /* AddWalletView.swift in Sources */,
+				988C6DE32BBC9F4C00D112D4 /* AppConfig.swift in Sources */,
+				9814EE602BC08DCE00C429C3 /* SelectNetworkVM.swift in Sources */,
+				9814EE4C2BBFB4DA00C429C3 /* WalletNetworking.swift in Sources */,
+				988C6DD62BBC8AEA00D112D4 /* R.generated.swift in Sources */,
+				988C6E0B2BBEFD8E00D112D4 /* WalletVM.swift in Sources */,
+				988C6DCF2BBC828900D112D4 /* UIViewExtensions.swift in Sources */,
+				988C6E132BBF2DB000D112D4 /* MyWalletCell.swift in Sources */,
+				988C6DC02BBC800200D112D4 /* WalletVC.swift in Sources */,
+				988C6E002BBDE00400D112D4 /* PasswordTF.swift in Sources */,
+				9814EE4E2BBFF17B00C429C3 /* SendTokenVM.swift in Sources */,
+				988C6DB52BBC7D6700D112D4 /* BaseTableViewCell.swift in Sources */,
+				988C6DDC2BBC97AB00D112D4 /* NewWalletVC.swift in Sources */,
+				988C6DB72BBC7D6700D112D4 /* BaseViewModel.swift in Sources */,
+				9814EE6C2BC15AC500C429C3 /* RpcResponse.swift in Sources */,
+				9814EE442BBF508300C429C3 /* Response.swift in Sources */,
+				988C6DB62BBC7D6700D112D4 /* BaseNavigationViewController.swift in Sources */,
+				989D98DB2BBBF5D000FC4461 /* SceneDelegate.swift in Sources */,
+				9814EE392BBF443200C429C3 /* SendTokenVC.swift in Sources */,
+				9814EE6A2BC126AD00C429C3 /* Notifications.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98E72BBBF5D200FC4461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989D98F02BBBF5D200FC4461 /* ERCWalletTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		989D98F12BBBF5D200FC4461 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				989D98FC2BBBF5D200FC4461 /* ERCWalletUITestsLaunchTests.swift in Sources */,
+				989D98FA2BBBF5D200FC4461 /* ERCWalletUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		989D98ED2BBBF5D200FC4461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 989D98D42BBBF5D000FC4461 /* ERCWallet */;
+			targetProxy = 989D98EC2BBBF5D200FC4461 /* PBXContainerItemProxy */;
+		};
+		989D98F72BBBF5D200FC4461 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 989D98D42BBBF5D000FC4461 /* ERCWallet */;
+			targetProxy = 989D98F62BBBF5D200FC4461 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		989D98E32BBBF5D200FC4461 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				989D98E42BBBF5D200FC4461 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		989D98FD2BBBF5D200FC4461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		989D98FE2BBBF5D200FC4461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		989D99002BBBF5D200FC4461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62903A21A1C5079D559E6BB2 /* Pods-ERCWallet.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ERCWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ERCWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		989D99012BBBF5D200FC4461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 379F31627A895BCAB7FD921A /* Pods-ERCWallet.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ERCWallet/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ERCWallet;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		989D99032BBBF5D200FC4461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15690BD94AFB7594EA8BF041 /* Pods-ERCWalletTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERCWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ERCWallet";
+			};
+			name = Debug;
+		};
+		989D99042BBBF5D200FC4461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 719F04CBF11CCA60C22AA251 /* Pods-ERCWalletTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ERCWallet.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ERCWallet";
+			};
+			name = Release;
+		};
+		989D99062BBBF5D200FC4461 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF0F68A0A1FF739EFFF9076B /* Pods-ERCWallet-ERCWalletUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERCWallet;
+			};
+			name = Debug;
+		};
+		989D99072BBBF5D200FC4461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7823026A124A640850B69B7B /* Pods-ERCWallet-ERCWalletUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8HY85J5AL4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.ascen.ERCWalletUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ERCWallet;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		989D98D02BBBF5D000FC4461 /* Build configuration list for PBXProject "ERCWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989D98FD2BBBF5D200FC4461 /* Debug */,
+				989D98FE2BBBF5D200FC4461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989D98FF2BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989D99002BBBF5D200FC4461 /* Debug */,
+				989D99012BBBF5D200FC4461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989D99022BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989D99032BBBF5D200FC4461 /* Debug */,
+				989D99042BBBF5D200FC4461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		989D99052BBBF5D200FC4461 /* Build configuration list for PBXNativeTarget "ERCWalletUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				989D99062BBBF5D200FC4461 /* Debug */,
+				989D99072BBBF5D200FC4461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 989D98CD2BBBF5D000FC4461 /* Project object */;
+}
